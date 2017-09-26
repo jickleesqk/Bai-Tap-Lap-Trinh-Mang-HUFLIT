@@ -1,0 +1,5 @@
+D:\visual studio 2017\Projects\Lap Trinh Mang\TCPSendFile\TCPSenFileClient\bin\Debug\TCPSenFileClient.exe.config
+D:\visual studio 2017\Projects\Lap Trinh Mang\TCPSendFile\TCPSenFileClient\bin\Debug\TCPSenFileClient.exe
+D:\visual studio 2017\Projects\Lap Trinh Mang\TCPSendFile\TCPSenFileClient\bin\Debug\TCPSenFileClient.pdb
+D:\visual studio 2017\Projects\Lap Trinh Mang\TCPSendFile\TCPSenFileClient\obj\Debug\TCPSenFileClient.exe
+D:\visual studio 2017\Projects\Lap Trinh Mang\TCPSendFile\TCPSenFileClient\obj\Debug\TCPSenFileClient.pdb
