@@ -12,24 +12,46 @@ namespace Bai2
     {
         static void Main(string[] args)
         {
-            string[] text = 
-            string HostName = Dns.GetHostName();
-            Console.WriteLine("Host Name of machine =" + HostName);
-            IPAddress[] ipaddress = Dns.GetHostAddresses(HostName);
-            Console.WriteLine("IP Address of Machine is");
-            foreach (IPAddress ip in ipaddress)
-            {
-                Console.WriteLine(ip.ToString());
-            }
-            string hostName = "www.bing.com";
-            IPAddress[] ipa = Dns.GetHostAddresses(hostName);
-            Console.WriteLine("IPAddress of " + hostName + " is");
-            foreach (IPAddress ipaddr in ipa)
-            {
-                Console.WriteLine(ipaddr);
-            }
+            //string[] text = 
+            //string HostName = Dns.GetHostName();
+            //Console.WriteLine("Host Name of machine =" + HostName);
+            //IPAddress[] ipaddress = Dns.GetHostAddresses(HostName);
+            //Console.WriteLine("IP Address of Machine is");
+            //foreach (IPAddress ip in ipaddress)
+            //{
+            //    Console.WriteLine(ip.ToString());
+            //}
 
-            Console.ReadKey();
+            IPHostEntry ipHostEntry = new IPHostEntry();
+            Console.Write("Enter hostname/IP: ");
+            string input = Console.ReadLine();
+            ipHostEntry = Dns.GetHostEntry(input);
+
+            try
+            {
+                Console.WriteLine("Hostname: " + ipHostEntry.HostName);
+                Console.WriteLine("IPs: ");
+                foreach (IPAddress ip in ipHostEntry.AddressList)
+                {
+                    Console.WriteLine(ip.ToString());
+                }
+                Console.WriteLine("Aliases: ");
+                if (ipHostEntry.Aliases.Length == 0)
+                {
+                    Console.WriteLine("No aliases");
+                }
+                else
+                {
+                    foreach (string alias in ipHostEntry.Aliases)
+                    {
+                        Console.WriteLine(alias);
+                    }
+                }
+            }
+            catch (Exception exc)
+            {
+                Console.WriteLine(exc.Message);
+            };
         }
     }
 }

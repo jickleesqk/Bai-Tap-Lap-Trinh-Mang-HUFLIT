@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B2FB6630-613C-4FB8-BCDC-1042E85CF302}</ProjectGuid>
+    <ProjectGuid>{715343BE-69AB-4166-ACF6-F0D4EFC0B7DC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Bai3Server</RootNamespace>
-    <AssemblyName>Bai3Server</AssemblyName>
+    <RootNamespace>Bai3</RootNamespace>
+    <AssemblyName>Bai3</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
