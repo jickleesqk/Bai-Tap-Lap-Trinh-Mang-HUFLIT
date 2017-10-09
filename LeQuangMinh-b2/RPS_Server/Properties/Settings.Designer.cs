@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Bai1_Client.Properties
+namespace RPS_Server.Properties
 {
 
 
