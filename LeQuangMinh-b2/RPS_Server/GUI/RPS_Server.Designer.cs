@@ -1,6 +1,6 @@
 ﻿namespace RPS_Server.GUI
 {
-    partial class RPS_Server
+    partial class RPS_ServerForm
     {
         /// <summary>
         /// Required designer variable.
@@ -35,8 +35,8 @@
             this.btnScissor = new System.Windows.Forms.Button();
             this.txtOpponent = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnPaper = new System.Windows.Forms.Button();
+            this.btnRock = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -100,33 +100,33 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Opponent";
             // 
-            // button2
+            // btnPaper
             // 
-            this.button2.Location = new System.Drawing.Point(93, 90);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Paper";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.btnPaper_Click);
+            this.btnPaper.Location = new System.Drawing.Point(93, 90);
+            this.btnPaper.Name = "btnPaper";
+            this.btnPaper.Size = new System.Drawing.Size(75, 23);
+            this.btnPaper.TabIndex = 7;
+            this.btnPaper.Text = "Paper";
+            this.btnPaper.UseVisualStyleBackColor = true;
+            this.btnPaper.Click += new System.EventHandler(this.btnPaper_Click);
             // 
-            // button3
+            // btnRock
             // 
-            this.button3.Location = new System.Drawing.Point(174, 90);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Rock";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.btnRock_Click);
+            this.btnRock.Location = new System.Drawing.Point(174, 90);
+            this.btnRock.Name = "btnRock";
+            this.btnRock.Size = new System.Drawing.Size(75, 23);
+            this.btnRock.TabIndex = 8;
+            this.btnRock.Text = "Rock";
+            this.btnRock.UseVisualStyleBackColor = true;
+            this.btnRock.Click += new System.EventHandler(this.btnRock_Click);
             // 
-            // RPS_Server
+            // RPS_ServerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(275, 139);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnRock);
+            this.Controls.Add(this.btnPaper);
             this.Controls.Add(this.txtOpponent);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnScissor);
@@ -134,7 +134,7 @@
             this.Controls.Add(this.txtSelection);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "RPS_Server";
+            this.Name = "RPS_ServerForm";
             this.Text = "RPS_Server";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -150,7 +150,7 @@
         private System.Windows.Forms.Button btnScissor;
         private System.Windows.Forms.TextBox txtOpponent;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnPaper;
+        private System.Windows.Forms.Button btnRock;
     }
 }
